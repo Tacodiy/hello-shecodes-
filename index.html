@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>EDM 🎹🎵</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: linear-gradient(
+          to top,
+          rgb(251, 194, 235) 0%,
+          rgb(166, 193, 238) 100%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-family: system-ui;
+        color: black;
+        border: solid #6643b5 2px;
+        border-radius: 21px;
+        padding: 20px;
+        max-width: 100%;
+        margin: 20px 50px 20px 50px;
+      }
+      h2 {
+        text-align: center;
+        font-family: system-ui;
+        color: black;
+      }
+      img {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 80%;
+      }
+      p {
+        line-height: 38px;
+        font-size: 20px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 25px;
+        padding: 25px;
+        font-weight: bold;
+        border: 2px solid #6643b5;
+        border-radius: 45px;
+        color: white;
+        background-color: #6643b5;
+        transition: all ease-in-out 150ms;
+      }
+      button:hover {
+        cursor: pointer;
+        border: #6643b5 solid 2px;
+        color: #6643b5;
+        background-color: white;
+      }
+      .container {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: gray 5px 10px 5px;
+        padding: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: #6643b5;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      a:hover {
+        color: #6643b5;
+      }
+      .bywho {
+        text-align: center;
+        font-family: monospace;
+        color: gray;
+      }
+      .devto {
+        font-family: monospace;
+        color: gray;
+        font-weight: bold;
+      }
+    </style>
+    <div class="container">
+      <h1>Trance music</h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/026/862/original/20190223_Cosmic-Gate-Live-on-stage-ASOT900_0010_Ash-Youd.jpg?1644397846"
+      />
+      <h2>What is Trance music ?</h2>
+
+      <p>
+        <strong>Trance</strong> is a genre of electronic dance music that
+        emerged from the British new-age music scene and the early 1990s German
+        techno and hardcore scenes. A trance can be described as a state of
+        hypnotism and blurred consciousness. It can be triggered by spiritual
+        meditation, the use of psychedelic drugs, some breathing techniques, or
+        even occur almost randomly. Trance music mimics this state by building
+        up tension through a series of build-up beats and release layers.
+        <a href="https://en.wikipedia.org/wiki/Trance_music" target="_blank"
+          >Read more about <strong>Trance music</strong> on ...</a
+        >
+      </p>
+
+      <button>Download Trance tracks</button>
+      <p class="bywho">
+        Coded By <a class="devto" href="https://dev.to/tacodiy">Tacodiy 👩‍💻</a>
+      </p>
+    </div>
+    <script>
+      function WhenClick() {
+        let trackNum = prompt("How many tracks do you want ?");
+        let email = prompt("Please enter your email .");
+        alert(
+          ` Thank you ! ${trackNum} is sent to ${email} adress. Please check out your email .👋❤ `
+        );
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", WhenClick);
+    </script>
+  </body>
+</html>
